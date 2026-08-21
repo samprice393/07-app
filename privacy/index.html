@@ -12,7 +12,7 @@
   <p class="eyebrow">07</p>
   <h1>Privacy Policy</h1>
   <p class="lede">07 is a local-first camera with no account, advertising, analytics, or developer-operated photo server.</p>
-  <p class="meta">Effective and last updated: August 9, 2026</p>
+  <p class="meta">Effective and last updated: August 21, 2026</p>
 
   <h2>Photographs and Card 01</h2>
   <p>Camera frames and finished photographs are processed on your device. Card 01 files remain in 07's local app storage until you erase them, format Card 01, or remove the app. Card 01 is excluded from device backup. ERASE and FORMAT affect only Card 01 and never delete assets from your Photos library.</p>
@@ -24,7 +24,12 @@
   <p>Saving a copy to Photos is optional. 07 asks only for add-only Photos access and does not enumerate unrelated items in your library. A copy added to Photos is controlled by you and may sync according to your iCloud Photos settings. Because Card 01 and Photos are separate systems, 07 confirms saves when iOS reports success but cannot promise delivery exactly once in every interruption or termination edge case.</p>
 
   <h2>Camera and location</h2>
-  <p>Camera access is used only while the REC. interface is visible. Location metadata is optional and off by default. When you enable it, a recent location is written into the captured photograph's metadata. You can revoke Camera, Photos, or Location permission at any time in iOS Settings.</p>
+  <p>Camera access is used only while the REC. interface is visible. Both of the iPhone's cameras are reached through it: LENS turns the session round between the rear camera and the front camera, and neither is treated differently from the other here. Location metadata is optional and off by default. When you enable it, a recent location is written into the captured photograph's metadata. You can revoke Camera, Photos, or Location permission at any time in iOS Settings.</p>
+
+  <h2>Importing photographs from your library</h2>
+  <p>IMPORT, on the card screen, develops photographs you already have through the same look as a capture. It opens the system Photos picker, which runs in Apple's own process, outside 07. 07 asks for no library read permission, holds no handle into your library, and never sees or enumerates its contents; only the photographs you pick in that picker are handed over, up to 100 in one batch.</p>
+  <p>Each photograph you hand in is read once, for the few facts that decide how it develops and what the card records: its own EXIF ISO, exposure time, aperture, whether the flash fired, capture date and orientation, and the average brightness measured off its pixels. Those are what the development pipeline routes on and what playback prints, and they are the same facts the camera measures for itself when it takes a frame. The developed copy is written on Card 01 by 07's own encoder, carrying the fields a capture carries and none of the source's others.</p>
+  <p>The source photograph's own GPS position is the one exception, and it travels into the developed file only while Location metadata is on in Settings — the same switch that decides whether a capture carries a location. With it off, no position is written. Everything here happens on the device: nothing about an imported photograph is sent anywhere, and the original in your library is left untouched.</p>
 
   <h2>Purchases and sharing</h2>
   <p>StoreKit purchases are processed by Apple; the developer does not receive your payment-card information. Sharing begins only when you choose SEND and invoke Apple's system share sheet. The service or person you select then handles the shared copy under its own terms.</p>
